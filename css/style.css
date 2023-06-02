@@ -6,22 +6,19 @@
 .Header .Button-top{
     background-color: white;
     height: 100%;   
-    display: flex;
-    justify-content: space-around;
-    width: 25%;
+    display: flex;    
+    width: 340px;/*25% no permite ser responsive Validar este widh barra superior*/
     align-self: flex-end;
     padding-left: 32px;
     padding-right: 4px;
-    margin-right: 1%;
-
+    margin-right: 1%;    
 }
 .Header {
     padding: 6px;    
     height: 48px;   
-    width: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: right;    
-    
+    justify-content: right;        
 }
 .Container{    
     display: flex;
@@ -70,7 +67,13 @@
 .inputText{
     width: 80%;
 }
-.inputText textarea{
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.inputText #input-search:hover{  
+    border: 1px solid rgba(255, 255, 0, 0.692);
+}
+.inputText #input-search{
     border: none;
     border-radius: 5px;
     resize: none;
@@ -81,7 +84,7 @@
     height: 24px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.buttons{
+.btn-search{
     display: flex;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -89,7 +92,7 @@
     justify-content: center;
     /*padding  lateralse16 botones margen 11 411 4*/
 }
-.buttons button{
+.btn-search button{
     padding: 0px 16px;
     margin: 4px 11px;
     height: 36px;
@@ -98,11 +101,13 @@
     border-radius: 5px;
     color: #3c4043;
 }
-.buttons button:hover{
+.btn-search button:hover{
     border: 1px solid #8f9396;
     cursor: pointer;
 }
-
+.Buttons-Left a{
+    text-decoration: none;
+}
 .textBottomLink{
     display: flex;    
     font-size: 13px;
@@ -164,8 +169,10 @@
     justify-content: flex-start;    
     
 } 
-.Buttons-Right button#svgButton:hover{
-    cursor: pointer;
+.Buttons-Right button#svgButton:hover{    
+    cursor: pointer;    
+    border-radius: 100%;
+    background-color: #d6d2d288 ;
 }
 
 .Footer div{
